@@ -2,6 +2,7 @@
 
 Esse foi um dos meus primeiros projetos no mundo da programação, um desafio que eu mesmo criei para eu praticar.
 o Ano deve ter cido la pra 2017 que desenvolvi ele tem tanta interface grafica quanto a versão de Linha de Comando.
+No Repositorio tem as duas versões a GUI & CLI.
 
 
 Sistema Solar - GSL
