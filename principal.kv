@@ -1,0 +1,920 @@
+<ScreenManagement>:
+    PaginaInicial:
+    LabelConfig:
+    Lua:
+    Jupiter:
+    Netuno:
+    Venus:
+    Saturno:
+    Marte:
+    Plutao:
+    Mercurio:
+    Urano:
+    Terra:
+    Sobre_Nos:
+
+
+<PaginaInicial>:
+    name : 'paginaInicial'
+    Image:
+        source: 'fundo2.jpg'
+    FloatLayout:
+        Label:
+        Label:
+            text: 'Pagina Inicial'
+            size_hint: None, None
+            font_size: 50
+            x: 550
+            y: 610
+        Button:
+            background_color: [0, 0, 0, 0.7]
+            text: 'SOL'
+            font_size: '20sp'
+            on_release: app.root.menu_label_Config()
+            size_hint: None, None
+            size: 120,50
+            x: 260
+            y: 450
+
+        Button:
+            background_color: [0, 0, 0, 0.7]
+            text: 'LUA'
+            font_size: '20sp'
+            size_hint: None,None
+            size: 120, 50
+            x: 260
+            y: 375
+            on_release: app.root.lua()
+
+        Button:
+            background_color: [0, 0, 0, 0.7]
+            text: 'Júpiter'
+            font_size: '20sp'
+            size_hint: None,None
+            size: 120, 50
+            x: 260
+            y: 305
+            on_release: app.root.jupiter()
+
+        Button:
+            background_color: [0, 0, 0, 0.7]
+            text: 'Netuno'
+            font_size: '20sp'
+            size_hint: None,None
+            size: 120, 50
+            x: 260
+            y: 245
+            on_release: app.root.netuno()
+
+        Button:
+            background_color: [0, 0, 0, 0.7]
+            text: 'Venus'
+            font_size: '20sp'
+            size_hint: None,None
+            size: 120, 50
+            x: 260
+            y: 170
+            on_release: app.root.venus()
+
+        Button:
+            background_color: [0, 0, 0, 0.7]
+            text: 'Saturno'
+            font_size: '20sp'
+            size_hint: None,None
+            size: 120, 50
+            x: 800
+            y: 450
+            on_release: app.root.saturno()
+
+        Button:
+            background_color: [0, 0, 0, 0.7]
+            text: 'Marte'
+            font_size: '20sp'
+            size_hint: None,None
+            size: 120, 50
+            x: 800
+            y: 375
+            on_release: app.root.marte()
+
+        Button:
+            background_color: [0, 0, 0, 0.7]
+            text: 'Plutão'
+            font_size: '20sp'
+            size_hint: None,None
+            size: 120, 50
+            x: 800
+            y: 305
+            on_release: app.root.plutao()
+
+        Button:
+            background_color: [0, 0, 0, 0.7]
+            text: 'Mercúrio'
+            font_size: '20sp'
+            size_hint: None,None
+            size: 120, 50
+            x: 800
+            y: 245
+            on_release: app.root.mercurio()
+
+        Button:
+            background_color: [0, 0, 0, 0.7]
+            text: 'Urano'
+            font_size: '20sp'
+            size_hint: None,None
+            size: 120, 50
+            x: 800
+            y: 170
+            on_release: app.root.urano()
+
+        Button:
+            background_color: [0, 0, 0, 0.7]
+            text: 'Terra'
+            font_size: '20sp'
+            size_hint: None,None
+            size: 120, 50
+            x: 260
+            y: 100
+            on_release: app.root.terra()
+
+        Button:
+            background_color: [0, 0, 0, 0.7]
+            text: 'Sobre Nós'
+            font_size: '20sp'
+            size_hint: None,None
+            size: 120, 50
+            x: 800
+            y: 100
+            on_release: app.root.sobre_nos()
+
+
+<LabelConfig>:
+    name: 'labelConfig'
+    Image:
+        source: 'fundo10.jpg'
+    FloatLayout:
+        orientation: 'vertical'
+        Image:
+            source: 'sol.jpg'
+            size_hint: None,None
+            size: 450, 350
+            x: 95
+            y: 190
+        Label:
+        Label:
+            text: 'SOL'
+            font_size: 70
+            size_hint: None, None
+            x: 550
+            y: 600
+        Label:
+            text: 'Estrela'
+            font_size: 25
+            size_hint: None, None
+            x: 850
+            y: 350
+        Label:
+            text: 'Diâmetro: 1.392.000 km'
+            font_size: 25
+            size_hint: None,None
+            x: 900
+            y: 260
+        Label:
+            text: 'Temperatura: 6.000 °C'
+            size_hint: None,None
+            font_size: 25
+            x: 900
+            y: 220
+        Label:
+            text: 'Distância da Terra: 149.597.870 km'
+            size_hint: None,None
+            font_size: 25
+            x: 900
+            y: 190
+
+        Button:
+            background_color: [5, 87, 138, 0]
+            on_release: app.root.switch_to_paginaInicial()
+            text: 'Volta'
+            font_size: 20
+            size_hint: None,None
+            size: 100, 50
+            x: 1100
+            y: 30
+<Lua>:
+    name: 'lua'
+    Image:
+        source: 'fundo10.jpg'
+    FloatLayout:
+        Image:
+            source: 'lua.jpg'
+            size_hint: None,None
+            size: 300, 350
+            x: 95
+            y: 190
+        Label:
+        Label:
+            text: 'LUA'
+            font_size: 40
+            size_hint: None, None
+            x: 550
+            y: 600
+        Label:
+            text: 'Satélite da Terra'
+            size_hint: None, None
+            font_size: 25
+            x: 880
+            y: 360
+        Label:
+            text: 'Diâmetro: 3.473 km'
+            size_hint: None, None
+            font_size: 25
+            x: 810
+            y: 230
+        Label:
+            text: 'Temperatura: de 120 °C a  -100 °C'
+            size_hint: None, None
+            font_size: 25
+            x: 900
+            y: 190
+        Label:
+            text: 'Distância da Terra: 405.530 km'
+            size_hint: None, None
+            font_size: 25
+            x: 880
+            y: 150
+        Label:
+            text: 'Distância do Sol: 152.396.000 km'
+            size_hint: None, None
+            font_size: 25
+            x: 890
+            y: 100
+
+        Button:
+            background_color: [5, 87, 138, 0]
+            text: 'Volta'
+            size_hint: None, None
+            size: 100, 50
+            font_size: 20
+            x: 1100
+            y: 30
+            on_release: app.root.switch_to_paginaInicial()
+
+<Jupiter>:
+    name: 'jupiter'
+    Image:
+        source: 'fundo10.jpg'
+    FloatLayout:
+        Image:
+            source: 'jupiter.jpg'
+            size_hint: None,None
+            size: 300, 350
+            x: 85
+            y: 100
+        Label:
+        Label:
+            text: 'JÚPITER'
+            font_size: 40
+            size_hint: None, None
+            x: 550
+            y: 600
+        Label:
+            text: 'Planeta'
+            size_hint: None, None
+            font_size: 35
+            x: 850
+            y: 400
+        Label:
+            text: 'Diâmetro: 142.984 km'
+            size_hint: None, None
+            font_size: 25
+            x: 810
+            y: 270
+        Label:
+            text: 'Temperatura: - 153 °C'
+            size_hint: None, None
+            font_size: 25
+            x: 810
+            y: 240
+        Label:
+            text: 'Distância do Sol: 788.000.000 km'
+            size_hint: None, None
+            font_size: 25
+            x: 875
+            y: 210
+        Label:
+            text: 'Duração do Dia: 9,84 horas terrestres'
+            size_hint: None,None
+            font_size: 25
+            x: 890
+            y: 180
+        Label:
+            text: 'Duração do Ano : 11,86 anos terrestres'
+            size_hint: None,None
+            font_size: 25
+            x: 900
+            y: 150
+        Label:
+            text: 'Satélites : 12 , entre eles: Calixto, Europa'
+            size_hint: None,None
+            font_size: 25
+            x: 907
+            y: 120
+        Button:
+            background_color: [5, 87, 138, 0]
+            text: 'Volta'
+            size_hint: None, None
+            size: 100, 50
+            font_size: 20
+            x: 1100
+            y: 30
+            on_release: app.root.switch_to_paginaInicial()
+
+
+<Netuno>:
+    name: 'netuno'
+    Image:
+        source:  'fundo10.jpg'
+    FloatLayout:
+        Image:
+            source: 'netuno.jpg'
+            size_hint: None,None
+            size: 300, 350
+            x: 85
+            y: 100
+        Label:
+        Label:
+            text: 'NETUNO'
+            font_size: 40
+            size_hint: None, None
+            x: 550
+            y: 600
+        Label:
+            text: 'Planeta'
+            size_hint: None, None
+            font_size: 35
+            x: 850
+            y: 400
+        Label:
+            text: 'Diâmetro: 49,528 km'
+            size_hint: None, None
+            font_size:25
+            x: 810
+            y: 270
+        Label:
+            text: 'Temperatura: - 255 °C'
+            size_hint: None, None
+            font_size:25
+            x: 810
+            y: 240
+        Label:
+            text: 'Distância do Sol: 778.000.000 km'
+            size_hint: None, None
+            font_size: 25
+            x: 875
+            y: 210
+        Label:
+            text: 'Duração do Dia: 19,2 horas terrestres'
+            size_hint: None,None
+            font_size:25
+            x: 890
+            y: 180
+        Label:
+            text: 'Duração do Ano : 164,79 anos terrestres'
+            size_hint: None,None
+            font_size: 25
+            x: 900
+            y: 150
+        Label:
+            text: 'Satélites : 2, Nereida e Tritão'
+            size_hint: None,None
+            font_size:25
+            x: 840
+            y: 120
+        Button:
+            text: 'Volta'
+            background_color: [5, 87, 138, 0]
+            size_hint: None, None
+            size: 100, 50
+            x: 1100
+            y: 30
+            on_release: app.root.switch_to_paginaInicial()
+
+<Venus>:
+    name: 'venus'
+    Image:
+        source: 'fundo10.jpg'
+    FloatLayout:
+        Image:
+            source: 'venus.jpg'
+            size_hint: None,None
+            size: 300, 350
+            x: 85
+            y: 100
+        Label:
+        Label:
+            text: 'VENUS'
+            font_size: 40
+            size_hint: None, None
+            x: 550
+            y: 600
+        Label:
+            text: 'Planeta'
+            size_hint: None, None
+            font_size: 35
+            x: 850
+            y: 400
+        Label:
+            text: 'Diâmetro: 12.102 km'
+            size_hint: None, None
+            font_size: 25
+            x: 810
+            y: 270
+        Label:
+            text: 'Temperatura: - 457 °C'
+            size_hint: None, None
+            font_size: 25
+            x: 810
+            y: 240
+        Label:
+            text: 'Distância do Sol: 108.000.000 km'
+            size_hint: None, None
+            font_size: 25
+            x: 875
+            y: 210
+        Label:
+            text: 'Duração do Dia: 243,01 horas terrestres'
+            size_hint: None,None
+            font_size: 25
+            x: 900
+            y: 180
+        Label:
+            text: 'Duração do Ano : 224,7 anos terrestres'
+            size_hint: None,None
+            font_size: 25
+            x: 900
+            y: 150
+        Label:
+            text: 'Satélites : Não Tem'
+            size_hint: None,None
+            font_size: 25
+            x: 795
+            y: 120
+        Button:
+            background_color: [5, 87, 138, 0]
+            text: 'Volta'
+            size_hint: None, None
+            size: 100, 50
+            x: 1100
+            y: 30
+            on_release: app.root.switch_to_paginaInicial()
+
+<Saturno>:
+    name: 'saturno'
+    Image:
+        source: 'fundo10.jpg'
+    FloatLayout:
+        Image:
+            source: 'saturno.jpg'
+            allow_stretch: True
+            size_hint: None,None
+            size: 300, 350
+            x: 85
+            y: 100
+        Label:
+        Label:
+            text: 'SATURNO'
+            font_size: 40
+            size_hint: None, None
+            x: 550
+            y: 600
+        Label:
+            text: 'Planeta'
+            size_hint: None, None
+            font_size: 35
+            x: 850
+            y: 400
+        Label:
+            text: 'Diâmetro: 102,660 km'
+            size_hint: None, None
+            font_size: 25
+            x: 810
+            y: 270
+        Label:
+            text: 'Temperatura: - 185 °C'
+            size_hint: None, None
+            font_size: 25
+            x: 810
+            y: 240
+        Label:
+            text: 'Distância do Sol: 1.427.000.000 km'
+            size_hint: None, None
+            font_size: 25
+            x: 875
+            y: 210
+        Label:
+            text: 'Duração do Dia: 10,23 horas terrestres'
+            size_hint: None,None
+            font_size: 25
+            x: 890
+            y: 180
+        Label:
+            text: 'Duração do Ano : 29,46 anos terrestres'
+            size_hint: None,None
+            font_size: 25
+            x: 900
+            y: 150
+        Label:
+            text: 'Satélites : 15, entre eles: Titâ, Mimas e Encélado'
+            size_hint: None,None
+            font_size: 25
+            x: 907
+            y: 120
+        Button:
+            background_color: [5, 87, 138, 0]
+            text: 'Volta'
+            size_hint: None, None
+            size: 100, 50
+            x: 1100
+            y: 30
+            on_release: app.root.switch_to_paginaInicial()
+
+<Marte>:
+    name: 'marte'
+    Image:
+        source: 'fundo10.jpg'
+    FloatLayout:
+        Image:
+            source: 'marte.jpg'
+            size_hint: None,None
+            size: 300, 350
+            x: 85
+            y: 100
+        Label:
+        Label:
+            text: 'MARTE'
+            font_size: 40
+            size_hint: None, None
+            x: 550
+            y: 600
+        Label:
+            text: 'Planeta'
+            size_hint: None, None
+            font_size: 35
+            x: 850
+            y: 400
+        Label:
+            text: 'Diâmetro: 6.786 km'
+            size_hint: None, None
+            font_size: 25
+            x: 810
+            y: 270
+        Label:
+            text: 'Temperatura: de -137 a 37 °C'
+            size_hint: None, None
+            font_size: 25
+            x: 850
+            y: 240
+        Label:
+            text: 'Distância do Sol: 228.000.000 km'
+            size_hint: None, None
+            font_size: 25
+            x: 875
+            y: 210
+        Label:
+            text: 'Duração do Dia: 24,623 horas terrestres'
+            size_hint: None,None
+            font_size: 25
+            x: 900
+            y: 180
+        Label:
+            text: 'Duração do Ano : 1,88 anos terrestres'
+            size_hint: None,None
+            font_size: 25
+            x: 900
+            y: 150
+        Label:
+            text: 'Satélites : 2, Fobos e Delmos'
+            size_hint: None,None
+            font_size: 25
+            x: 840
+            y: 120
+        Button:
+            text: 'Volta'
+            size_hint: None, None
+            size: 100, 50
+            background_color: [5, 87, 138, 0]
+            x: 1100
+            y: 30
+            on_release: app.root.switch_to_paginaInicial()
+
+<Plutao>:
+    name: 'plutao'
+    Image:
+        source: 'fundo10.jpg'
+    FloatLayout:
+        Image:
+            source: 'plutao.jpg'
+            size_hint: None,None
+            size: 300, 350
+            x: 85
+            y: 100
+        Label:
+        Label:
+            text: 'PLUTÃO'
+            font_size: 40
+            size_hint: None, None
+            x: 550
+            y: 600
+        Label:
+            text: 'Planeta'
+            size_hint: None, None
+            font_size: 35
+            x: 850
+            y: 400
+        Label:
+            text: 'Diâmetro: 2.300 km'
+            size_hint: None, None
+            font_size: 25
+            x: 810
+            y: 270
+        Label:
+            text: 'Temperatura: -236 °C'
+            size_hint: None, None
+            font_size: 25
+            x: 810
+            y: 240
+        Label:
+            text: 'Distância do Sol: 5.900.000.000 km'
+            size_hint: None, None
+            font_size: 25
+            x: 875
+            y: 210
+        Label:
+            text: 'Duração do Dia: 6,39 horas terrestres'
+            size_hint: None,None
+            font_size: 25
+            x: 890
+            y: 180
+        Label:
+            text: 'Duração do Ano : 248,54 anos terrestres'
+            size_hint: None,None
+            font_size: 25
+            x: 900
+            y: 150
+        Label:
+            text: 'Satélites : 1, Caronte'
+            size_hint: None,None
+            font_size: 25
+            x: 800
+            y: 120
+        Button:
+            text: 'Volta'
+            size_hint: None, None
+            size: 100, 50
+            background_color: [5, 87, 138, 0]
+            x: 1100
+            y: 30
+            on_release: app.root.switch_to_paginaInicial()
+
+
+<Mercurio>:
+    name: 'mercurio'
+    Image:
+        source: 'fundo10.jpg'
+    FloatLayout:
+        Image:
+            source: 'mercurio.jpg'
+            size_hint: None,None
+            size: 300, 350
+            x: 85
+            y: 100
+        Label:
+        Label:
+            text: 'MERCÚRIO'
+            font_size: 40
+            size_hint: None, None
+            x: 550
+            y: 600
+        Label:
+            text: 'Planeta'
+            size_hint: None, None
+            font_size: 35
+            x: 850
+            y: 400
+        Label:
+            text: 'Diâmetro: 4.878 km'
+            size_hint: None, None
+            font_size: 25
+            x: 810
+            y: 270
+        Label:
+            text: 'Temperatura: de -173 a 427 °C'
+            size_hint: None, None
+            font_size: 25
+            x: 860
+            y: 240
+        Label:
+            text: 'Distância do Sol: 58.000.000 km'
+            size_hint: None, None
+            font_size: 25
+            x: 860
+            y: 210
+        Label:
+            text: 'Duração do Dia: 58,65 horas terrestres'
+            size_hint: None,None
+            font_size: 25
+            x: 890
+            y: 180
+        Label:
+            text: 'Duração do Ano : 87,97 anos terrestres'
+            size_hint: None,None
+            font_size: 25
+            x: 900
+            y: 150
+        Label:
+            text: 'Satélites : Não Tem'
+            size_hint: None,None
+            font_size: 25
+            x: 810
+            y: 120
+        Button:
+            text: 'Volta'
+            size_hint: None, None
+            background_color: [5, 87, 138, 0]
+            size: 100, 50
+            x: 1100
+            y: 30
+            on_release: app.root.switch_to_paginaInicial()
+
+<Urano>:
+    name: 'urano'
+    Image:
+        source: 'fundo10.jpg'
+    FloatLayout:
+        Image:
+            source: 'urano.jpg'
+            size_hint: None,None
+            size: 300, 350
+            x: 85
+            y: 100
+        Label:
+        Label:
+            text: 'URANO'
+            font_size: 40
+            size_hint: None, None
+            x: 550
+            y: 600
+        Label:
+            text: 'Planeta'
+            size_hint: None, None
+            font_size: 35
+            x: 850
+            y: 400
+        Label:
+            text: 'Diâmetro: 51.118 km'
+            size_hint: None, None
+            font_size: 25
+            x: 810
+            y: 270
+        Label:
+            text: 'Temperatura: - 214 °C'
+            size_hint: None, None
+            font_size: 25
+            x: 810
+            y: 240
+        Label:
+            text: 'Distância do Sol: 2.870.000.000 km'
+            size_hint: None, None
+            font_size: 25
+            x: 875
+            y: 210
+        Label:
+            text: 'Duração do Dia: 17,9 horas terrestres'
+            size_hint: None,None
+            font_size: 25
+            x: 870
+            y: 180
+        Label:
+            text: 'Duração do Ano : 84,01 anos terrestres'
+            size_hint: None,None
+            font_size: 25
+            x: 870
+            y: 150
+        Label:
+            text: 'Satélites : 15, entre eles: Titânia, Oberon, Miranda'
+            size_hint: None,None
+            font_size: 25
+            x: 918
+            y: 120
+        Button:
+            text: 'Volta'
+            size_hint: None, None
+            background_color: [5, 87, 138, 0]
+            size: 100, 50
+            x: 1100
+            y: 30
+            on_release: app.root.switch_to_paginaInicial()
+
+
+<Terra>:
+    name: 'terra'
+    Image:
+        source: 'fundo10.jpg'
+    FloatLayout:
+        Image:
+            source: 'terra.jpg'
+            size_hint: None,None
+            size: 300, 350
+            x: 85
+            y: 100
+        Label:
+        Label:
+            text: 'TERRA'
+            font_size: 40
+            size_hint: None, None
+            x: 550
+            y: 600
+        Label:
+            text: 'Planeta'
+            size_hint: None, None
+            font_size: 35
+            x: 850
+            y: 400
+        Label:
+            text: 'Diâmetro: 12.756 km'
+            size_hint: None, None
+            font_size: 25
+            x: 810
+            y: 270
+        Label:
+            text: 'Temperatura: de -70 a 55 °C'
+            size_hint: None, None
+            font_size: 25
+            x: 810
+            y: 240
+        Label:
+            text: 'Distância do Sol: 150.000.000 km'
+            size_hint: None, None
+            font_size: 25
+            x: 810
+            y: 210
+        Label:
+            text: 'Duração do Dia: 23,92 horas'
+            size_hint: None,None
+            font_size: 25
+            x: 800
+            y: 180
+        Label:
+            text: 'Duração do Ano : 365,25 dias'
+            size_hint: None,None
+            font_size: 25
+            x: 800
+            y: 150
+        Label:
+            text: 'Satélites : Lua'
+            size_hint: None,None
+            font_size: 25
+            x: 723
+            y: 120
+        Label:
+            text: 'Idade: Aproximadamente 4,6 Bilhões de anos'
+            size_hint: None, None
+            font_size: 25
+            x: 900
+            y: 90
+        Button:
+            text: 'Volta'
+            size_hint: None, None
+            size: 100, 50
+            background_color: [5, 87, 138, 0]
+            x: 1100
+            y: 30
+            on_release: app.root.switch_to_paginaInicial()
+
+<Sobre_Nos>:
+    name: 'sobre_nos'
+    Image:
+        source: 'sobre.png'
+
+    Label:
+        text: '__AUTOR__ : CorteZ'
+        font_size: 25
+        size_hint: None, None
+        x: 900
+        y: 300
+
+    Label:
+        text: 'Versão : 2.0'
+        font_size: 25
+        size_hint: None,None
+        x: 900
+        y: 250
+
+    Button:
+        text: 'Volta'
+        size_hint: None,None
+        background_color: [8, 87, 138, 0]
+        size: 100, 50
+        x: 1100
+        y: 30
+        on_release: app.root.switch_to_paginaInicial()
